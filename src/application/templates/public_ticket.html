@@ -6,15 +6,27 @@
             <div class="row">
                 <div class="col-md-8">
 
-                {% if ticket.paid %}
+                {% if ticket.payment_method == "BTC" %}
 
-                    <h4 class="text-lowercase ct-fw-600">Your ticket is paid.</h4>
-                    <p>Thank you for your payment. You will shortly recieve email with confirmation</p>
+                    {% if ticket.paid %}
 
-                {% else %}
+                        <h4 class="text-lowercase ct-fw-600">Your ticket is paid.</h4>
+                        <p>Thank you for your payment. You will shortly recieve email with confirmation</p>
 
-                    <h4 class="text-lowercase ct-fw-600">We are processing your payment.</h4>
-                    <p>We will send you email when your payment arrives. You can try to refresh this page. If you feel that there is something wrong, please send us an email.</p>
+                    {% else %}
+
+                        <h4 class="text-lowercase ct-fw-600">We are processing your payment.</h4>
+                        <p>We will send you email when your payment arrives. You can try to refresh this page. If you feel that there is something wrong, please send us an email.</p>
+
+                    {% endif %}
+
+                {% endif %}
+
+                {% if ticket.payment_method == "WIRETRANSFER" %}
+
+                        <h4 class="text-lowercase ct-fw-600">We are waiting for your payment.</h4>
+                        <p>Please, send <b>{{ticket.price}} kč</b> to account <b>2200587351 / 2010</b> with message <b>{{ticketid}}</b></p>
+                        <p>We will send you an email when payment arrives</p>
 
                 {% endif %}
 

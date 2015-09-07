@@ -10,7 +10,7 @@ import json
 
 from flask.views import View
 
-from flask import request, redirect, flash
+from flask import request, redirect, flash, abort
 
 from ...forms import TikcetForm
 from ...models import TicketModel, gen_new_ticket_id
@@ -29,11 +29,27 @@ class PublicSale(View):
             form = TikcetForm()
 
             if form.validate_on_submit():
+
                 self.save_ticket(form)
 
-                payment_url = self.get_payment_url()
+                if form.payment_method.data == "BTC":
+                    # Payment with Bitcoin
 
-                return redirect(payment_url)
+                    payment_url = self.get_payment_url()
+
+                    return redirect(payment_url)
+
+                elif form.payment_method.data == "WIRETRANSFER":
+                    # Bank transfer
+
+                    return redirect("/ticket/" + self.ticket.key.id())
+
+                else:
+
+                    logging.error("Unknown payment method " + form.payment_method.data)
+
+                    abort(500)
+
             else:
                 flash("Email is not valid, please try it again.", "error")
                 return redirect("/")

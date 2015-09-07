@@ -1,0 +1,35 @@
+{% extends "public_base.html" %}
+
+{% block content %}
+
+        <div class="ct-u-paddingTop40 ct-u-paddingBottom60">
+            <div class="row">
+                <div class="col-md-8">
+
+                {% if ticket.paid %}
+
+                    <h4 class="text-lowercase ct-fw-600">Your ticket is paid.</h4>
+                    <p>Thank you for your payment. You will shortly recieve email with confirmation</p>
+
+                {% else %}
+
+                    <h4 class="text-lowercase ct-fw-600">We are processing your payment.</h4>
+                    <p>We will send you email when your payment arrives. You can try to refresh this page. If you feel that there is something wrong, please send us an email.</p>
+
+                {% endif %}
+
+                </div>
+                <div class="col-md-4">
+                    <h4 class="text-lowercase ct-fw-600">Your ticket ID</h4>
+                    <div>
+                        <span class="h3 ct-fw-800">{{ticketid[:3]}}-{{ticketid[3:]}}</span>
+                        <br>
+                        <span class="text-uppercase ct-fw-600">Please, present it at registration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

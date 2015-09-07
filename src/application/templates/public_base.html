@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
 
     <!--[if lt IE 9]>
@@ -109,15 +110,13 @@
                 <br>
                 <span class="text-uppercase ct-fw-600">DĚLNICKÁ 43, PRAHA 7, CZECH REPUBLIC</span>
                 <br>
-                <a href="mailto:hub@paralelnipolis.cz" class="text-uppercase ct-u-underline ct-fw-600">hub@paralelnipolis.cz</a>
+                <a href="mailto:info@paralelnipolis.cz" class="text-uppercase ct-u-underline ct-fw-600">info@paralelnipolis.cz</a>
                 <br>
-                <a href="https://www.facebook.com/paperhub"><i class="fa fa-fw fa-facebook-square"></i> facebook.com</a>
+                <a href="https://www.facebook.com/paperhub"><i class="fa fa-fw fa-facebook-square"></i> Paper Hub on Facebook</a>
                 <br>
-                <a href="https://instagram.com/paper_hub/"><i class="fa fa-fw fa-instagram"></i> instagram.com</a>
+                <a href="https://www.facebook.com/events/111132575904264/"><i class="fa fa-fw fa-facebook-square"></i> HCPP 2015 on Facebook</a>
                 <br>
-                <a href="https://twitter.com/Paper_Hub"><i class="fa fa-fw fa-twitter"></i> twitter.com</a>
-                <br>
-                <a href="https://plus.google.com/104114621737451145471/posts"><i class="fa fa-fw fa-google-plus"></i> Google Plus</a>
+                <a href="https://www.facebook.com/vejdiven"><i class="fa fa-fw fa-facebook-square"></i> Paralelni Polis on Facebook</a>
             </div>
         </div>
     </div>
@@ -180,6 +179,41 @@
 
 <script src="/assets/js/main.js"></script>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+
+
+<script>
+    $(document).ready(function() {
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            
+            {% for category, message in messages %}
+
+                setTimeout(function() {
+                    toastr.options = {
+                        closeButton: true,
+                        progressBar: true,
+                        showMethod: 'slideDown',
+                        timeOut: 4000
+                    };
+
+                    {% if category == "message" %}
+                        toastr.success('', '{{ message }}');
+                    {% else %}
+                        toastr.{{category}}('', '{{ message }}');
+                    {% endif %}
+
+                }, 100);
+
+            {% endfor %}
+
+          {% endif %}
+        {% endwith %}
+
+    });
+</script>
 
 
 </body>

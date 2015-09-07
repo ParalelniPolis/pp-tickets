@@ -10,7 +10,7 @@ import json
 
 from flask.views import View
 
-from flask import request, redirect
+from flask import request, redirect, flash
 
 from ...forms import TikcetForm
 from ...models import TicketModel, gen_new_ticket_id
@@ -35,7 +35,8 @@ class PublicSale(View):
 
                 return redirect(payment_url)
             else:
-                return "not valid"
+                flash("Email is not valid, please try it again.", "error")
+                return redirect("/")
 
     def save_ticket(self, form):
 

@@ -16,10 +16,10 @@
 
                     <form action="/sale" method="post" accept-charset="utf-8"  enctype="multipart/form-data">
                         {{ form.hidden_tag() }}
+                        
                         <div class="form-group">
-                            {{form.email(class="form-control input-lg", id="exampleInputEmail1", type="email")}}
+                            {{form.email(class="form-control input-lg", id="exampleInputEmail1", type="email", required="true")}}
                             <label for="exampleInputEmail1">Email address</label>
-
                         </div>
                 </div>
 

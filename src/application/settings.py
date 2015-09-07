@@ -26,6 +26,8 @@ class Config(object):
 
     BITCOINPAY_CALLBACK_PASS = SecretConfig.BITCOINPAY_CALLBACK_PASS
 
+    ADMIN_EMAILS = SecretConfig.ADMIN_EMAILS
+
 
 class Development(Config):
     DEBUG = True

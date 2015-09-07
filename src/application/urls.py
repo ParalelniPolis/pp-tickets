@@ -7,6 +7,7 @@ URL dispatch route mappings and error handlers
 from flask import render_template
 
 from application import app
+from decorators import login_required_user
 
 # Public
 from application.views.public.PublicWarmup import PublicWarmup
@@ -28,8 +29,8 @@ app.add_url_rule('/ticket/<ticket_id>', 'PublicTicket', view_func=PublicTicket.a
 app.add_url_rule('/notification', 'PublicNotification', view_func=PublicNotification.as_view('PublicNotification'), methods=["GET", "POST"])
 
 # Admin
-app.add_url_rule('/admin', 'AdminIndex', view_func=AdminIndex.as_view('AdminIndex'))
-app.add_url_rule('/admin/tickets', 'AdminTicketList', view_func=AdminTicketList.as_view('AdminTicketList'))
+app.add_url_rule('/admin', 'AdminIndex', view_func=login_required_user(AdminIndex.as_view('AdminIndex')))
+app.add_url_rule('/admin/tickets', 'AdminTicketList', view_func=login_required_user(AdminTicketList.as_view('AdminTicketList')))
 
 
 # Error handlers

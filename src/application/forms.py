@@ -33,3 +33,26 @@ TikcetForm.payment_method = wtf.SelectField(
     ]
 )
 
+
+TikcetAdminForm = model_form(
+    TicketModel,
+    wtf.Form,
+    only=[
+        "email",
+        "price",
+        "paid"
+    ],
+    field_args={
+        "email": dict(validators=[validators.Regexp(regex="^[A-Za-z0-9._%+\-\ ]+@[A-Za-z0-9.\-\ ]+\.[A-Za-z]{2,4}([\ ]+)?$")]),
+        "price": dict(validators=[validators.NumberRange()]),
+        "paid": dict(validators=[])
+    }
+)
+
+TikcetAdminForm.payment_method = wtf.SelectField(
+    choices=[
+        ("BTC", "Bitcoin"),
+        # ("PAYPAL", "PayPal"),
+        ("WIRETRANSFER", "Bank Transfer")
+    ]
+)

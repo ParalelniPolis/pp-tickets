@@ -18,9 +18,6 @@ class AdminTicketList(View):
 
         tickets = TicketModel.query().order(-TicketModel.created)
 
-        for ticket in tickets:
-            print(ticket)
-
         return render_template(
             "admin_ticket_list.html",
             tickets=tickets

@@ -18,7 +18,7 @@ class Config(object):
     # Flask-Cache settings
     CACHE_TYPE = 'gaememcached'
 
-    TICKET_PRICE = 1
+    TICKET_PRICE = 790
 
     NOTIFY_EMAIL = "pavel@pavelkral.eu"
 

@@ -111,7 +111,7 @@ class PublicSale(View):
     def send_email_bank(self):
 
         sender_address = "HCPP 2015 <" + app.config["SENDER_EMAIL"] + ">"
-        subject = "HCPP 2015 ticket"
+        subject = "Payment for ticket to HCPP 2015"
         content = render_template(
             "public_ticket_email_bank.html",
             ticket=self.ticket

@@ -52,7 +52,7 @@ class PublicNotification(View):
 
     def send_email(self):
 
-        sender_address = "HCPP 2015 <pavel@pavelkral.eu>"
+        sender_address = "HCPP 2015 <" + app.config["SENDER_EMAIL"] + ">"
         subject = "HCPP 2015 ticket"
         content = render_template(
             "public_ticket_email.html",

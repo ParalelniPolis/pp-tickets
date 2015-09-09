@@ -22,6 +22,8 @@ class Config(object):
 
     NOTIFY_EMAIL = "pavel@pavelkral.eu"
 
+    SENDER_EMAIL = "pavel@pavelkral.eu"
+
     BITCOINPAY_API_PRODUCTION = SecretConfig.BITCOINPAY_API_PRODUCTION
 
     BITCOINPAY_CALLBACK_PASS = SecretConfig.BITCOINPAY_CALLBACK_PASS

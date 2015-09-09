@@ -25,18 +25,20 @@ class PublicNotification(View):
 
         if str(request.headers.get('BPSignature')) == self.get_hash(request.data):
             request_data = json.loads(request.data)
-            logging.info("Payment notification " + str(request_data))
 
-            self.ticket = TicketModel.get_by_id(request_data["reference"])
+            if request_data["status"] == "confirmed":
+                logging.info("Payment notification " + str(request_data))
 
-            assert self.ticket is not None
+                self.ticket = TicketModel.get_by_id(request_data["reference"])
 
-            self.ticket.paid = True
-            self.ticket.put()
+                assert self.ticket is not None
 
-            logging.info("Ticket " + str(self.ticket.key.id()) + " has been paid")
+                self.ticket.paid = True
+                self.ticket.put()
 
-            self.send_email()
+                logging.info("Ticket " + str(self.ticket.key.id()) + " has been paid")
+
+                self.send_email()
 
         else:
             logging.warning("Incorrect callback password")

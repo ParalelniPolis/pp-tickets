@@ -18,8 +18,6 @@ class PublicTicket(View):
 
         ticket = TicketModel.get_by_id(ticket_id)
 
-        print(ticket)
-
         assert ticket is not None
 
         return render_template(

@@ -40,18 +40,23 @@ TikcetAdminForm = model_form(
     only=[
         "email",
         "price",
-        "paid"
+        "paid",
+        "note",
+        "hidden"
     ],
     field_args={
         "email": dict(validators=[validators.Regexp(regex="^[A-Za-z0-9._%+\-\ ]+@[A-Za-z0-9.\-\ ]+\.[A-Za-z]{2,4}([\ ]+)?$")]),
-        "price": dict(validators=[validators.NumberRange()]),
-        "paid": dict(validators=[])
+        "price": dict(validators=[validators.NumberRange(min=1,max=10000)]),
+        "paid": dict(validators=[]),
+        "note": dict(validators=[]),
+        "hidden": dict(validators=[]),
     }
 )
 
 TikcetAdminForm.payment_method = wtf.SelectField(
     choices=[
         ("BTC", "Bitcoin"),
+        ("CASH", "Cash"),
         # ("PAYPAL", "PayPal"),
         ("WIRETRANSFER", "Bank Transfer")
     ]

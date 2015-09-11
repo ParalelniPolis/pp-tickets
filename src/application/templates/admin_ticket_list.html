@@ -15,38 +15,9 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="dataTable_wrapper">
-                                <table class="table table-striped  table-hover" id="dataTables-example">
-                                    <thead>
-                                        <tr>
-                                            <th>Ticket</th>
-                                            <th>Email</th>
-                                            <th>Paid</th>
-                                            <th>Created</th>
-                                            <th>Price</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {% for ticket in tickets %}
-                                            <tr class="odd gradeX">
-                                                <td>
-                                                    <a href="/admin/ticket/{{ticket.key.id()}}">
-                                                        {{ticket.key.id()[:3]}}-{{ticket.key.id()[3:]}}
-                                                    </a>
-                                                </td>
-                                                <td>{{ticket.email}}</td>
 
-                                                {% if ticket.paid %}
-                                                    <td><i class="fa fa-check fa-fw"></i></td>
-                                                {% else %}
-                                                    <td><i class="fa fa-close fa-fw"></i></td>
-                                                {% endif %}
-                                                
-                                                <td>{{ticket.created.strftime("%d.%m.%Y %H:%M")}}</td>
-                                                <td>{{ticket.price}} CZK</td>
-                                            </tr>
-                                        {% endfor %}
-                                    </tbody>
-                                </table>
+                                {% include "admin_ticket_table.html" %}
+
                             </div>
 
                         </div>

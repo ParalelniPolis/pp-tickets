@@ -1,0 +1,71 @@
+{% extends "admin_base.html" %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Ticket {{ticket.key.id()[:3]}}-{{ticket.key.id()[3:]}}</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-6">
+
+            <div class="panel panel-default">
+
+                <div class="panel-body">
+                        <form action="/admin/ticket/{{ticket.key.id()}}" method="post" accept-charset="utf-8"  enctype="multipart/form-data" role="form">
+                            {{ form.hidden_tag() }}
+                        
+                            <div class="form-group">
+                                <label class="control-label">Email</label>
+                                {{ form.email(class="form-control") }}
+                                <p class="help-block">Contact email.</p>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Price</label>
+                                {{ form.price(class="form-control") }}
+                                <p class="help-block">Price in CZK</p>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Paid</label>
+                                {{ form.paid(class="form-control") }}
+                                <p class="help-block">Is ticket paid ?</p>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Payment method</label>
+                                {{ form.payment_method(class="form-control") }}
+                                <p class="help-block">Ticke payment method.</p>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Note</label>
+                                {{ form.note(class="form-control", rows="10") }}
+                                <p class="help-block">Admin note.</p>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Hidden</label>
+                                {{ form.hidden(class="form-control") }}
+                                <p class="help-block">Is this ticket testing therefore hidden ?</p>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit">
+                            </div>
+
+                        </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}

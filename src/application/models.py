@@ -22,6 +22,10 @@ class TicketModel(ndb.Model):
 
     created = ndb.DateTimeProperty(auto_now_add=True)
 
+    note = ndb.TextProperty(required=False, default="")
+
+    hidden = ndb.BooleanProperty(default=False)
+
 
 def gen_alnum_string():
     return ''.join(random.choice('123456789ABCDEFGHIJKLMNPQRSTUVWXYZ') for i in range(6))

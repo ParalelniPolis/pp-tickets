@@ -1,0 +1,47 @@
+<table class="table table-striped  table-hover" id="dataTables-example">
+    <thead>
+        <tr>
+            <th>Ticket</th>
+            <th>Email</th>
+            <th>Paid</th>
+            <th>Method</th>
+            <th>Created</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for ticket in tickets %}
+
+
+            <tr class="odd gradeX" {% if ticket.hidden%}style="color:#E6E6E6"{% endif %}>
+                <td>
+                    <a href="/admin/ticket/{{ticket.key.id()}}" {% if ticket.hidden%}style="color:#E6E6E6"{% endif %}>
+                        {{ticket.key.id()[:3]}}-{{ticket.key.id()[3:]}}
+                    </a>
+                </td>
+                <td>{{ticket.email}}</td>
+
+                {% if ticket.paid %}
+                    <td><i class="fa fa-check fa-fw"></i></td>
+                {% else %}
+                    <td><i class="fa fa-close fa-fw"></i></td>
+                {% endif %}
+                
+                <td>
+                    {% if ticket.payment_method == "BTC" %}
+                        <i class="fa fa-btc fa-fw"></i>
+                    {% elif ticket.payment_method == "WIRETRANSFER" %}
+                        <i class="fa fa-university fa-fw"></i>
+                    {% elif ticket.payment_method == "PAYPAL" %}
+                        <i class="fa fa-paypal fa-fw"></i>
+                    {% elif ticket.payment_method == "CASH" %}
+                        <i class="fa fa-coffee fa-fw"></i>
+                    {% endif %}
+                </td>
+
+                <td>{{ticket.created.strftime("%d.%m.%Y %H:%M")}}</td>
+                <td>{{ticket.price}} CZK</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

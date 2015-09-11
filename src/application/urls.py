@@ -20,7 +20,7 @@ from application.views.public.PublicNotification import PublicNotification
 from application.views.admin.AdminIndex import AdminIndex
 from application.views.admin.AdminTicketList import AdminTicketList
 from application.views.admin.AdminTicketDetail import AdminTicketDetail
-
+from application.views.admin.AdminGetCSV import AdminGetCSV
 
 app.add_url_rule('/_ah/warmup', 'PublicWarmup', view_func=PublicWarmup.as_view('PublicWarmup'))
 
@@ -33,7 +33,8 @@ app.add_url_rule('/notification', 'PublicNotification', view_func=PublicNotifica
 # Admin
 app.add_url_rule('/admin', 'AdminIndex', view_func=login_required_user(AdminIndex.as_view('AdminIndex')))
 app.add_url_rule('/admin/tickets', 'AdminTicketList', view_func=login_required_user(AdminTicketList.as_view('AdminTicketList')))
-app.add_url_rule('/admin/ticket/<ticket_id>', 'AdminTicketDetail', view_func=login_required_user(AdminTicketDetail.as_view('AdminTicketDetail')))
+app.add_url_rule('/admin/ticket/<ticket_id>', 'AdminTicketDetail', view_func=login_required_user(AdminTicketDetail.as_view('AdminTicketDetail')), methods=["GET", "POST"])
+app.add_url_rule('/admin/csv', 'AdminGetCSV', view_func=login_required_user(AdminGetCSV.as_view('AdminGetCSV')))
 
 
 # Error handlers

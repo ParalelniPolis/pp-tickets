@@ -32,6 +32,12 @@
                             </div>
 
                             <div class="form-group">
+                                <label class="control-label">Ticket type</label>
+                                {{ form.ticket_type(class="form-control") }}
+                                <p class="help-block">Type of this ticket</p>
+                            </div>
+
+                            <div class="form-group">
                                 <label class="control-label">Paid</label>
                                 {{ form.paid(class="form-control") }}
                                 <p class="help-block">Is ticket paid ?</p>

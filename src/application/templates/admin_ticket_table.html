@@ -21,6 +21,8 @@
                 </td>
                 <td>{{ticket.email}}</td>
 
+                <td>{%if ticket.ticket_type %}{{ticket.ticket_type}}{% else %}NORMAL{% endif %}</td>
+
                 {% if ticket.paid %}
                     <td><i class="fa fa-check fa-fw"></i></td>
                 {% else %}

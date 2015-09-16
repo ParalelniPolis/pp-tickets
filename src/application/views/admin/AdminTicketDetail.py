@@ -33,6 +33,7 @@ class AdminTicketDetail(View):
                 ticket.payment_method = form.payment_method.data
                 ticket.note = form.note.data
                 ticket.hidden = form.hidden.data
+                ticket.ticket_type = form.ticket_type.data
 
                 ticket.put()
 

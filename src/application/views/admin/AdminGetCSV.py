@@ -42,7 +42,7 @@ class AdminGetCSV(View):
             columns.append(str(ticket.price))
             columns.append(str(ticket.paid))
             columns.append(ticket.created.strftime("%d.%m.%Y %H:%M"))
-            columns.append(str(ticket.note))
+            columns.append(ticket.note)
             columns.append(str(ticket.hidden))
 
             lines.append(self.add_line(columns))

@@ -22,6 +22,7 @@ from application.views.admin.AdminIndex import AdminIndex
 from application.views.admin.AdminTicketList import AdminTicketList
 from application.views.admin.AdminTicketDetail import AdminTicketDetail
 from application.views.admin.AdminGetCSV import AdminGetCSV
+from application.views.admin.AdminAddTicket import AdminAddTicket
 
 app.add_url_rule('/_ah/warmup', 'PublicWarmup', view_func=PublicWarmup.as_view('PublicWarmup'))
 
@@ -37,6 +38,7 @@ app.add_url_rule('/admin', 'AdminIndex', view_func=login_required_user(AdminInde
 app.add_url_rule('/admin/tickets', 'AdminTicketList', view_func=login_required_user(AdminTicketList.as_view('AdminTicketList')))
 app.add_url_rule('/admin/ticket/<ticket_id>', 'AdminTicketDetail', view_func=login_required_user(AdminTicketDetail.as_view('AdminTicketDetail')), methods=["GET", "POST"])
 app.add_url_rule('/admin/csv', 'AdminGetCSV', view_func=login_required_user(AdminGetCSV.as_view('AdminGetCSV')))
+app.add_url_rule('/admin/newticket', 'AdminAddTicket', view_func=login_required_user(AdminAddTicket.as_view('AdminAddTicket')), methods=["GET", "POST"])
 
 
 # Error handlers

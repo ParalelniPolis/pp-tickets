@@ -30,6 +30,8 @@ class TicketModel(ndb.Model):
 
     hidden = ndb.BooleanProperty(default=False)
 
+    ticket_type = ndb.StringProperty(required=False)
+
     def set_paid(self, value):
         if self.paid is False and value is True:
             logging.info("Order " + self.key.id() + " has been paid")

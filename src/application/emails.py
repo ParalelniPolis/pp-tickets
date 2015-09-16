@@ -5,6 +5,8 @@ This sends emails
 
 """
 
+import logging
+
 from application import app
 
 from google.appengine.api import mail
@@ -26,6 +28,7 @@ class Emails(object):
             ticket=ticket
         )
 
+        logging.info("Sending email " + subject + " to " + ticket.email)
         mail.send_mail(cls.sender_address, ticket.email, subject, content)
 
     @classmethod
@@ -37,6 +40,7 @@ class Emails(object):
             ticket=ticket
         )
 
+        logging.info("Sending email " + subject + " to " + ticket.email)
         mail.send_mail(cls.sender_address, ticket.email, subject, content)
 
     @classmethod
@@ -48,4 +52,5 @@ class Emails(object):
             ticket=ticket
         )
 
+        logging.info("Sending email " + subject + " to " + ticket.email)
         mail.send_mail(cls.sender_address, ticket.email, subject, content)

@@ -34,7 +34,7 @@
 
 
         <section>
-            <header class="ct-pageSectionHeader ct-pageSectionHeader--numbered ct-u-marginTop20 ct-u-marginBottom20 ct-js-wayPoint">
+            <header class="ct-pageSectionHeader ct-pageSectionHeader--numbered ct-u-marginTop20 ct-js-wayPoint">
                 <h2 class="ct-fw-600">
                     <span class="text-lowercase">ticket.</span>
                     <!-- <small class="ct-u-colorMotive ct-fw-300">Early bird</small> -->
@@ -46,7 +46,25 @@
             <p>
                 <div class="row">
                     <div class="col-sm-6">
-                            Ticket to HCPP 2015 will cost you <b>{{config["TICKET_PRICE"]}} kč</b>. You will get access to 3 day long event full of interesting events.
+
+                        <div class="form-group">
+                            {{form.ticket_type(class="form-control", id="exampleTshirt4")}}
+                            <label for="exampleTshirt4">Ticket type</label>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <b>Normal ticket</b> - Normal ticket will give you access to all presentations and cup of awesome coffee.
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <b>VIP ticket</b> - With VIP ticket you will get poster, unlimited supply of coffee and bottle of wine.
+                                Holders of VIP tickets have also reserved seats and two tickets to Fasion.STL
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </p>

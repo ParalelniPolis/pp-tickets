@@ -72,7 +72,14 @@ class PublicSale(View):
         self.ticket = TicketModel(id=ticket_id)
         self.ticket.email = form.email.data
         self.ticket.payment_method = form.payment_method.data
-        self.ticket.price = app.config["TICKET_PRICE"]
+
+        if form.ticket_type.data == "NORMAL":
+            self.ticket.price = app.config["TICKET_PRICE_NORMAL"]
+
+        if form.ticket_type.data == "VIP":
+            self.ticket.price = app.config["TICKET_PRICE_VIP"]
+
+        self.ticket.ticket_type = form.ticket_type.data
 
         self.ticket.put()
 

@@ -18,13 +18,14 @@ class Config(object):
     # Flask-Cache settings
     CACHE_TYPE = 'gaememcached'
 
-    TICKET_PRICE = 790
+    TICKET_PRICE_NORMAL = 790
+    TICKET_PRICE_VIP = 4500
 
     NOTIFY_EMAIL = "pavel@pavelkral.eu"
 
     SENDER_EMAIL = "pavel@pavelkral.eu"
 
-    PAYPAL_BUTTON = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PFWJSNTQVL34U"
+    PAYPAL_BUTTON = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4UYTQSPMR26RS"
 
     BITCOINPAY_API_PRODUCTION = SecretConfig.BITCOINPAY_API_PRODUCTION
 

@@ -10,15 +10,16 @@ import json
 
 from flask.views import View
 
-from flask import request, redirect, flash, abort, render_template
+from flask import request, redirect, flash, abort
 
 from ...forms import TikcetForm
 from ...models import TicketModel, gen_new_ticket_id
 
 from google.appengine.api import urlfetch
-from google.appengine.api import mail
 
 from ... import app
+
+from ...emails import Emails
 
 
 class PublicSale(View):
@@ -43,9 +44,16 @@ class PublicSale(View):
                 elif form.payment_method.data == "WIRETRANSFER":
                     # Bank transfer
 
-                    self.send_email_bank()
+                    Emails.order_waiting_bank(self.ticket)
 
                     return redirect("/ticket/" + self.ticket.key.id())
+
+                elif form.payment_method.data == "PAYPAL":
+                    # Bank transfer
+
+                    Emails.order_waiting_paypal(self.ticket)
+
+                    return redirect(app.config["PAYPAL_BUTTON"])
 
                 else:
 
@@ -107,14 +115,3 @@ class PublicSale(View):
         assert payment_url.startswith("https")
 
         return payment_url
-
-    def send_email_bank(self):
-
-        sender_address = "HCPP 2015 <" + app.config["SENDER_EMAIL"] + ">"
-        subject = "Payment for ticket to HCPP 2015"
-        content = render_template(
-            "public_ticket_email_bank.html",
-            ticket=self.ticket
-        )
-
-        mail.send_mail(sender_address, self.ticket.email, subject, content)

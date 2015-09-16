@@ -7,7 +7,11 @@ App Engine datastore models
 
 import random
 
+import logging
+
 from google.appengine.ext import ndb
+
+from emails import Emails
 
 
 class TicketModel(ndb.Model):
@@ -25,6 +29,14 @@ class TicketModel(ndb.Model):
     note = ndb.TextProperty(required=False, default="")
 
     hidden = ndb.BooleanProperty(default=False)
+
+    def set_paid(self, value):
+        if self.paid is False and value is True:
+            logging.info("Order " + self.key.id() + " has been paid")
+
+            Emails.order_paid(self)
+
+        self.paid = value
 
 
 def gen_alnum_string():

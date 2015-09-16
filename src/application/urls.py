@@ -14,6 +14,7 @@ from application.views.public.PublicWarmup import PublicWarmup
 from application.views.public.PublicIndex import PublicIndex
 from application.views.public.PublicSale import PublicSale
 from application.views.public.PublicTicket import PublicTicket
+from application.views.public.PublicTicketPaypal import PublicTicketPaypal
 from application.views.public.PublicNotification import PublicNotification
 
 # Admin
@@ -28,6 +29,7 @@ app.add_url_rule('/_ah/warmup', 'PublicWarmup', view_func=PublicWarmup.as_view('
 app.add_url_rule('/', 'PublicIndex', view_func=PublicIndex.as_view('PublicIndex'))
 app.add_url_rule('/sale', 'PublicSale', view_func=PublicSale.as_view('PublicSale'), methods=["GET", "POST"])
 app.add_url_rule('/ticket/<ticket_id>', 'PublicTicket', view_func=PublicTicket.as_view('PublicTicket'))
+app.add_url_rule('/ticket/paypal', 'PublicTicketPaypal', view_func=PublicTicketPaypal.as_view('PublicTicketPaypal'))
 app.add_url_rule('/notification', 'PublicNotification', view_func=PublicNotification.as_view('PublicNotification'), methods=["GET", "POST"])
 
 # Admin

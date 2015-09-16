@@ -28,7 +28,7 @@ TikcetForm = model_form(
 TikcetForm.payment_method = wtf.SelectField(
     choices=[
         ("BTC", "Bitcoin"),
-        # ("PAYPAL", "PayPal"),
+        ("PAYPAL", "PayPal"),
         ("WIRETRANSFER", "Bank Transfer")
     ]
 )
@@ -57,7 +57,7 @@ TikcetAdminForm.payment_method = wtf.SelectField(
     choices=[
         ("BTC", "Bitcoin"),
         ("CASH", "Cash"),
-        # ("PAYPAL", "PayPal"),
+        ("PAYPAL", "PayPal"),
         ("WIRETRANSFER", "Bank Transfer")
     ]
 )

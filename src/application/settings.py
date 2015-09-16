@@ -24,6 +24,8 @@ class Config(object):
 
     SENDER_EMAIL = "pavel@pavelkral.eu"
 
+    PAYPAL_BUTTON = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PFWJSNTQVL34U"
+
     BITCOINPAY_API_PRODUCTION = SecretConfig.BITCOINPAY_API_PRODUCTION
 
     BITCOINPAY_CALLBACK_PASS = SecretConfig.BITCOINPAY_CALLBACK_PASS

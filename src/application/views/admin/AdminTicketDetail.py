@@ -29,7 +29,7 @@ class AdminTicketDetail(View):
 
                 ticket.email = form.email.data
                 ticket.price = form.price.data
-                ticket.paid = form.paid.data
+                ticket.set_paid(form.paid.data)
                 ticket.payment_method = form.payment_method.data
                 ticket.note = form.note.data
                 ticket.hidden = form.hidden.data

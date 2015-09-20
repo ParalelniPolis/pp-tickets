@@ -5252,7 +5252,7 @@ button:active {
 .ct-btn--perspective.btn-default:hover,
 .ct-btn--perspective.btn-default:active,
 .ct-btn--perspective.btn-default:focus {
-  background-color: #0002ff;
+  background-color: #fc4349;
   border-bottom-color: #d6030a;
   color: #ffffff;
 }
@@ -5339,7 +5339,7 @@ button:active {
 .ct-btn--perspective.ct-btn--black:hover,
 .ct-btn--perspective.ct-btn--black:active,
 .ct-btn--perspective.ct-btn--black:focus {
-  background-color: #0002ff;
+  background-color: #fc4349;
   border-bottom-color: #d6030a;
   color: #ffffff;
 }
@@ -5352,7 +5352,7 @@ button:active {
 .ct-btn--perspective.ct-btn--gray:hover,
 .ct-btn--perspective.ct-btn--gray:active,
 .ct-btn--perspective.ct-btn--gray:focus {
-  background-color: #0002ff;
+  background-color: #fc4349;
   border-bottom-color: #d6030a;
   color: #ffffff;
 }
@@ -5776,7 +5776,7 @@ body.ct-navbar-isTransparent-toInverse .ct-pageWrapper {
 .ct-navbar--motive .navbar-nav > li.active:hover > a,
 .ct-navbar--motive .navbar-nav > li.active:active > a,
 .ct-navbar--motive .navbar-nav > li.active:focus > a {
-  color: #0002ff !important;
+  color: #fc4349 !important;
 }
 @media (max-width: 767px) {
   .navbar {
@@ -7078,14 +7078,14 @@ fieldset[disabled] .form-group label:before {
   border-bottom-color: #4f4f4f;
 }
 .ct-u-borderMotiveBoth {
-  border-top: 10px solid #0002ff;
-  border-bottom: 10px solid #0002ff;
+  border-top: 10px solid #fc4349;
+  border-bottom: 10px solid #fc4349;
 }
 .ct-u-borderMotiveTop {
-  border-top: 10px solid #0002ff;
+  border-top: 10px solid #fc4349;
 }
 .ct-u-borderMotiveBottom {
-  border-bottom: 10px solid #0002ff;
+  border-bottom: 10px solid #fc4349;
 }
 .ct-u-backgroundWhite {
   background-color: #ffffff;
@@ -7194,7 +7194,7 @@ fieldset[disabled] .form-group label:before {
   color: #aaaaaa;
 }
 .ct-u-backgroundMotive {
-  background-color: #0002ff;
+  background-color: #fc4349;
   color: #222222;
 }
 .ct-u-backgroundDarkMotive {
@@ -7284,25 +7284,25 @@ fieldset[disabled] .form-group label:before {
   left: 0;
   bottom: -30px;
   border-width: 0 30px 30px 0;
-  border-color: transparent #0002ff transparent transparent;
+  border-color: transparent #fc4349 transparent transparent;
 }
 .ct-u-triangleBottomRight:after {
   right: 0;
   bottom: -30px;
   border-width: 30px 30px 0 0;
-  border-color: #0002ff transparent transparent transparent;
+  border-color: #fc4349 transparent transparent transparent;
 }
 .ct-u-triangleTopLeft:before {
   left: 0;
   top: -30px;
   border-width: 0 0 30px 30px;
-  border-color: transparent transparent #0002ff transparent;
+  border-color: transparent transparent #fc4349 transparent;
 }
 .ct-u-triangleTopRight:before {
   right: 0;
   top: -30px;
   border-width: 30px 0 0 30px;
-  border-color: transparent transparent transparent #0002ff;
+  border-color: transparent transparent transparent #fc4349;
 }
 .ct-u-diagonalTopLeft,
 .ct-u-diagonalTopRight {
@@ -12730,75 +12730,75 @@ footer .widget .widget-inner > ul li a:before {
   color: #ffffff;
 }
 a {
-  color: #0002ff;
+  color: #fc4349;
 }
 .dropcap:first-child:first-letter {
-  color: #0002ff;
+  color: #fc4349;
 }
 .list-group-item.active,
 .list-group-item.active:hover,
 .list-group-item.active:focus {
-  background-color: #0002ff;
-  border-color: #0002ff;
+  background-color: #fc4349;
+  border-color: #fc4349;
 }
 .ct-u-underline:hover {
-  color: #0002ff;
-  border-bottom: 4px solid #0002ff;
+  color: #fc4349;
+  border-bottom: 4px solid #fc4349;
 }
 .ct-navbar--motive {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .navbar-nav.ct-navbarNav--defaultActive > li.active {
-  border-top: 7px solid #0002ff;
+  border-top: 7px solid #fc4349;
 }
 .navbar-nav.ct-navbarNav--defaultActive > li.active > a,
 .navbar-nav.ct-navbarNav--defaultActive > li.active > a:hover,
 .navbar-nav.ct-navbarNav--defaultActive > li.active > a:active,
 .navbar-nav.ct-navbarNav--defaultActive > li.active a:focus {
-  color: #0002ff;
+  color: #fc4349;
 }
 .navbar-nav.ct-navbarNav--defaultActive > li:hover > a,
 .navbar-nav.ct-navbarNav--defaultActive > li:active > a,
 .navbar-nav.ct-navbarNav--defaultActive > li:focus > a {
-  color: #0002ff;
+  color: #fc4349;
 }
 .navbar-nav.ct-navbarNav--secundaryActive > li.active > a,
 .navbar-nav.ct-navbarNav--secundaryActive > li.active > a:hover,
 .navbar-nav.ct-navbarNav--secundaryActive > li.active > a:active,
 .navbar-nav.ct-navbarNav--secundaryActive > li.active a:focus {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .navbar-nav.ct-navbarNav--secundaryActive > li > a:hover,
 .navbar-nav.ct-navbarNav--secundaryActive > li > a:active,
 .navbar-nav.ct-navbarNav--secundaryActive > li > a:focus {
-  color: #0002ff;
+  color: #fc4349;
 }
 .navbar-nav.ct-navbarNav--thirdActive > li.active > a,
 .navbar-nav.ct-navbarNav--thirdActive > li.active > a:hover,
 .navbar-nav.ct-navbarNav--thirdActive > li.active > a:active,
 .navbar-nav.ct-navbarNav--thirdActive > li.active a:focus {
-  color: #0002ff;
+  color: #fc4349;
 }
 .navbar-nav.ct-navbarNav--thirdActive > li > a:hover,
 .navbar-nav.ct-navbarNav--thirdActive > li > a:active,
 .navbar-nav.ct-navbarNav--thirdActive > li > a:focus {
-  color: #0002ff;
+  color: #fc4349;
 }
 .dropdown-menu {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .ct-menuMobile .ct-menuMobile-navbar li.active > a {
-  color: #0002ff;
+  color: #fc4349;
 }
 .ct-sectionTitle-fixed {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .ct-pageHeader.ct-pageHeader--motive {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .ct-pageHeader.ct-pageHeader--motiveSub.ct-pageHeader--hasDescription .row div[class^="col-"]:last-child > span {
-  color: #0002ff;
-  border-left: 1px solid #0002ff;
+  color: #fc4349;
+  border-left: 1px solid #fc4349;
 }
 .ct-pageSectionHeader.ct-pageSectionHeader--boxedText h1 small,
 .ct-pageSectionHeader.ct-pageSectionHeader--boxedText .h1 small,
@@ -12812,93 +12812,93 @@ a {
 .ct-pageSectionHeader.ct-pageSectionHeader--boxedText .h5 small,
 .ct-pageSectionHeader.ct-pageSectionHeader--boxedText h6 small,
 .ct-pageSectionHeader.ct-pageSectionHeader--boxedText .h6 small {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .ct-section.ct-section--motive {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .ct-u-colorMotive {
-  color: #0002ff !important;
+  color: #fc4349 !important;
 }
 .btn-black:hover {
-  background-color: #0002ff;
-  border-color: #0002ff;
+  background-color: #fc4349;
+  border-color: #fc4349;
 }
 .ct-flexslider-imageDescription .ct-flexslider-imageDescriptionCategory {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .ct-flexslider--arrowType2 .flex-direction-nav a:hover,
 .ct-flexslider--arrowType2:hover .flex-direction-nav a:hover {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .ct-socials ul li a:hover,
 .ct-socials ul li a:focus,
 .ct-socials ul li a:active {
-  color: #0002ff;
+  color: #fc4349;
 }
 .ct-personBox.ct-personBox--secundary .ct-personBox-name .ct-personBox-nameInner {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .ct-personBox.ct-personBox--default .ct-personBox-function {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .ct-articleBox .ct-articleBox-dateMonth {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .ct-articleBox .ct-articleBox-titleBox a:hover {
-  color: #0002ff;
+  color: #fc4349;
 }
 .ct-articleBox.ct-articleBox--secundary .ct-articleBox-titleBox h4 a:hover {
-  color: #0002ff;
+  color: #fc4349;
 }
 .ct-articleBox.ct-articleBox--secundary .ct-articleBox-icon {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .ct-comments li > .media h5 a:hover,
 .ct-comments li > .media h5 a:focus,
 .ct-comments li > .media h5 a:active {
-  color: #0002ff;
+  color: #fc4349;
 }
 .ct-pricingBox.ct-pricingBox--motive .ct-pricingbox-title .ct-pricingbox-titleFirst {
-  color: #0002ff;
+  color: #fc4349;
 }
 .ct-pricingBox.ct-pricingBox--motive .ct-pricingBox-pricing {
-  color: #0002ff;
+  color: #fc4349;
 }
 .ct-pricingBox.ct-pricingBox--motive.ct-pricingBox--triangleTopLeft:before {
-  border-color: #0002ff transparent transparent transparent;
+  border-color: #fc4349 transparent transparent transparent;
 }
 .ct-pricingBox.ct-pricingBox--motive.ct-pricingBox--triangleTopRight:before {
-  border-color: transparent #0002ff transparent transparent;
+  border-color: transparent #fc4349 transparent transparent;
 }
 .ct-pricingBox.ct-pricingBox--motive.ct-pricingBox--triangleBottomRight:before {
-  border-color: transparent transparent #0002ff transparent;
+  border-color: transparent transparent #fc4349 transparent;
 }
 .ct-pricingBox.ct-pricingBox--motive.ct-pricingBox--triangleBottomLeft:before {
-  border-color: transparent transparent transparent #0002ff;
+  border-color: transparent transparent transparent #fc4349;
 }
 .ct-googleMap--accordion .ct-googleMap-header:hover {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .ct-gallery-item--masonry:hover .ct-gallery-itemDescription {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .ct-gallery-item--secundary .ct-gallery-itemDescription-category,
 .ct-gallery-item--third .ct-gallery-itemDescription-category,
 #ct-ajaxContent .ct-gallery-itemDescription-category {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .counter-block .counter .number {
-  color: #0002ff;
+  color: #fc4349;
 }
 .panel-default .panel-title > a {
-  border-color: #0002ff;
-  background-color: #0002ff;
+  border-color: #fc4349;
+  background-color: #fc4349;
 }
 .btn-primary,
 .btn-primary:disabled {
-  background-color: #0002ff;
-  border-color: #0002ff;
+  background-color: #fc4349;
+  border-color: #fc4349;
 }
 .btn-primary:hover,
 .btn-primary:disabled:hover,
@@ -12915,20 +12915,20 @@ a {
 .btn-default:disabled:active,
 .btn-default:focus,
 .btn-default:disabled:focus {
-  background-color: #0002ff;
-  border-color: #0002ff;
+  background-color: #fc4349;
+  border-color: #fc4349;
 }
 .ct-btn--black:hover,
 .ct-btn--black:active,
 .ct-btn--black:focus {
-  border-color: #0002ff;
-  background-color: #0002ff;
+  border-color: #fc4349;
+  background-color: #fc4349;
 }
 .ct-btn--gray:hover,
 .ct-btn--gray:active,
 .ct-btn--gray:focus {
-  border-color: #0002ff;
-  background-color: #0002ff;
+  border-color: #fc4349;
+  background-color: #fc4349;
 }
 .ct-btn--rounded:hover,
 .ct-btn--rounded:active,
@@ -12938,13 +12938,13 @@ a {
 .ct-btn--rounded.btn-primary:hover,
 .ct-btn--rounded.btn-primary:active,
 .ct-btn--rounded.btn-primary:focus {
-  color: #0002ff;
-  border-color: #0002ff;
+  color: #fc4349;
+  border-color: #fc4349;
 }
 .ct-btn--perspective.btn-default:hover,
 .ct-btn--perspective.btn-default:active,
 .ct-btn--perspective.btn-default:focus {
-  background-color: #0002ff;
+  background-color: #fc4349;
   border-bottom-color: #d6030a;
 }
 .ct-btn--perspective.btn-default:hover i,
@@ -12972,7 +12972,7 @@ a {
 .ct-btn--perspective.ct-btn--black:hover,
 .ct-btn--perspective.ct-btn--black:active,
 .ct-btn--perspective.ct-btn--black:focus {
-  background-color: #0002ff;
+  background-color: #fc4349;
   border-bottom-color: #d6030a;
 }
 .ct-btn--perspective.ct-btn--black:hover i,
@@ -12983,7 +12983,7 @@ a {
 .ct-btn--perspective.ct-btn--gray:hover,
 .ct-btn--perspective.ct-btn--gray:active,
 .ct-btn--perspective.ct-btn--gray:focus {
-  background-color: #0002ff;
+  background-color: #fc4349;
   border-bottom-color: #d6030a;
 }
 .ct-btn--perspective.ct-btn--gray:hover i,
@@ -12994,16 +12994,16 @@ a {
 .ct-sectionButton:hover .ct-sectionButton-circle,
 .ct-sectionButton:active .ct-sectionButton-circle,
 .ct-sectionButton:focus .ct-sectionButton-circle {
-  color: #0002ff;
-  border-color: #0002ff;
+  color: #fc4349;
+  border-color: #fc4349;
 }
 .ct-scrollUpButton:hover .ct-sectionButton-circle,
 .ct-scrollUpButton:active .ct-sectionButton-circle,
 .ct-scrollUpButton:focus .ct-sectionButton-circle {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .form-group label {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .form-group label:before {
   border-color: transparent #d6030a transparent transparent;
@@ -13011,13 +13011,13 @@ a {
 .form-search input:focus,
 .form-search input:active,
 .form-search input:valid {
-  border-color: #0002ff;
+  border-color: #fc4349;
 }
 .form-search input:focus + .btn,
 .form-search input:active + .btn,
 .form-search input:valid + .btn {
-  background-color: #0002ff;
-  border-color: #0002ff;
+  background-color: #fc4349;
+  border-color: #fc4349;
 }
 .ct-u-backgroundDarkGray .form-search input:focus,
 .ct-u-backgroundDarkGray2 .form-search input:focus,
@@ -13028,11 +13028,11 @@ a {
 .ct-u-backgroundDarkGray .form-search input:valid,
 .ct-u-backgroundDarkGray2 .form-search input:valid,
 .ct-u-backgroundDarkGray3 .form-search input:valid {
-  border-color: #0002ff;
+  border-color: #fc4349;
 }
 fieldset[disabled] .btn-primary {
-  background-color: #0002ff;
-  border-color: #0002ff;
+  background-color: #fc4349;
+  border-color: #fc4349;
 }
 .pagination > li:hover > a,
 .pagination > li:focus > a,
@@ -13040,8 +13040,8 @@ fieldset[disabled] .btn-primary {
 .pagination > li:hover > span,
 .pagination > li:focus > span,
 .pagination > li:active > span {
-  border-color: #0002ff;
-  color: #0002ff;
+  border-color: #fc4349;
+  color: #fc4349;
 }
 .pagination > li.active > a,
 .pagination > li.active > span,
@@ -13049,22 +13049,22 @@ fieldset[disabled] .btn-primary {
 .pagination > li.active > span:hover,
 .pagination > li.active > a:focus,
 .pagination > li.active > span:focus {
-  border-color: #0002ff;
-  color: #0002ff;
+  border-color: #fc4349;
+  color: #fc4349;
 }
 .ct-pagination a:hover,
 .ct-pagination a:focus,
 .ct-pagination a:active {
-  color: #0002ff;
+  color: #fc4349;
 }
 .ct-pagination .ct-pagination-middle:hover i {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .ct-gallery-filters li > a.active {
-  color: #0002ff;
+  color: #fc4349;
 }
 .progress .progress-bar {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .progress .progress-bar .ct-progressBar-tr {
   background-color: #fc2a31;
@@ -13078,85 +13078,85 @@ fieldset[disabled] .btn-primary {
 .nav-tabs.nav-justified > li.active > a:hover,
 .nav-tabs.nav-justified > li.active > a:focus,
 .nav-tabs.nav-justified > li.active > a:active {
-  border-color: #0002ff;
+  border-color: #fc4349;
 }
 .nav-tabs > li.ct-navTabs--default.active > a,
 .nav-tabs > li.ct-navTabs--default > a:hover,
 .nav-tabs > li.ct-navTabs--default > a:focus,
 .nav-tabs > li.ct-navTabs--default > a:active {
-  background-color: #0002ff;
-  border-color: #0002ff;
+  background-color: #fc4349;
+  border-color: #fc4349;
 }
 .nav-tabs > li.ct-navTabs--success.active > a,
 .nav-tabs > li.ct-navTabs--success > a:hover,
 .nav-tabs > li.ct-navTabs--success > a:focus,
 .nav-tabs > li.ct-navTabs--success > a:active {
-  background-color: #0002ff;
-  border-color: #0002ff;
+  background-color: #fc4349;
+  border-color: #fc4349;
 }
 .nav-tabs > li.ct-navTabs--danger.active > a,
 .nav-tabs > li.ct-navTabs--danger > a:hover,
 .nav-tabs > li.ct-navTabs--danger > a:focus,
 .nav-tabs > li.ct-navTabs--danger > a:active {
-  background-color: #0002ff;
-  border-color: #0002ff;
+  background-color: #fc4349;
+  border-color: #fc4349;
 }
 .nav-tabs > li.ct-navTabs--warning.active > a,
 .nav-tabs > li.ct-navTabs--warning > a:hover,
 .nav-tabs > li.ct-navTabs--warning > a:focus,
 .nav-tabs > li.ct-navTabs--warning > a:active {
-  background-color: #0002ff;
-  border-color: #0002ff;
+  background-color: #fc4349;
+  border-color: #fc4349;
 }
 .nav-tabs > li.ct-navTabs--info.active > a,
 .nav-tabs > li.ct-navTabs--info > a:hover,
 .nav-tabs > li.ct-navTabs--info > a:focus,
 .nav-tabs > li.ct-navTabs--info > a:active {
-  background-color: #0002ff;
-  border-color: #0002ff;
+  background-color: #fc4349;
+  border-color: #fc4349;
 }
 .ct-tabs .ct-tabs-toggle:hover,
 .ct-tabs .ct-tabs-toggle.is-active {
-  color: #0002ff;
-  border-color: #0002ff;
+  color: #fc4349;
+  border-color: #fc4349;
 }
 .mfp-close,
 button.mfp-close,
 .mfp-close-btn-in .mfp-close {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .ct-magnificPopup-bottomArrows .mfp-arrow:hover:before,
 .ct-magnificPopup-bottomArrows .mfp-arrow:focus:before,
 .ct-magnificPopup-bottomArrows .mfp-arrow:active:before {
-  color: #0002ff;
+  color: #fc4349;
 }
 .nav-previous .icon,
 .nav-next .icon {
-  border: 4px solid #0002ff;
-  color: #0002ff !important;
+  border: 4px solid #fc4349;
+  color: #fc4349 !important;
 }
 .vco-timeline .vco-navigation .timenav-background .timenav-line,
 .vco-timeline .vco-navigation .timenav .content .marker .line .event-line,
 .vco-timeline .vco-navigation .timenav .content .marker.active .line,
 .vco-timeline .vco-navigation .timenav .content .marker.active .dot {
-  background: #0002ff !important;
+  background: #fc4349 !important;
 }
 .widget .widget-inner > ul li a:hover,
 .widget .widget-inner > ul li a:focus,
 .widget .widget-inner > ul li a:active {
-  color: #0002ff;
+  color: #fc4349;
 }
 .widget .widget-inner > ul li.current-cat a {
-  color: #0002ff;
+  color: #fc4349;
 }
 .widget.ct-widget-recentPortfolio .widget-inner > ul li .ct-widget-recentPortfolio-titleContent {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .widget.ct-widget-recentPortfolio .widget-inner > ul li .ct-widget-recentPortfolio-titleContent:after {
-  border-color: transparent #0002ff transparent transparent;
+  border-color: transparent #fc4349 transparent transparent;
 }
 .widget.ct-widget-recentComments span {
-  color: #0002ff;
+  color: #fc4349;
 }
 .tagcloud a:hover,
 .ct-blog-tags a:hover,
@@ -13164,9 +13164,9 @@ button.mfp-close,
 .ct-blog-tags a:focus,
 .tagcloud a:active,
 .ct-blog-tags a:active {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }
 .ct-u-backgroundMotive .ct-callToActionBox:before,
 .ct-u-backgroundMotive .ct-callToActionBox:after {
-  background-color: #0002ff;
+  background-color: #fc4349;
 }

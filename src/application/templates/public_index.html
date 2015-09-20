@@ -2,18 +2,14 @@
 
 {% block content %}
         <section>
-            <header class="ct-pageSectionHeader ct-pageSectionHeader--numbered ct-u-marginTop20 ct-u-marginBottom40 ct-js-wayPoint">
-                <h2 class="ct-fw-600">
-                    <span class="text-lowercase">Contact.</span>
-                    <!-- <small class="ct-u-colorMotive ct-fw-300">Stay in touch</small> -->
-                </h2>
-                        <span class="ct-pageSectionHeader-rightContent ct-u-colorMotive ct-fs-i ct-u-arapey">
-                            
-                        </span>
-            </header>
             <div class="row">
-                <div class="col-sm-6">
-
+                <header class="col-md-4 ct-pageSectionHeader ct-u-marginTop70">
+                    <h2 class="ct-fw-600">
+                        <span class="text-lowercase">Contact</span>
+                        <small class="ct-u-colorMotive ct-fw-300">Stay in touch</small>
+                    </h2>
+                </header>
+                <div class="col-md-8 ct-u-marginTop100">
                     <form action="/sale" method="post" accept-charset="utf-8"  enctype="multipart/form-data">
                         {{ form.hidden_tag() }}
 
@@ -22,71 +18,47 @@
                             <label for="exampleInputEmail1">Email address</label>
                         </div>
                 </div>
+            </div>
+        </section>
 
 
-                <div class="col-sm-6">
-<!--                     <p>
-                        We will send you ticket to this address.
-                    </p> -->
+        <section>
+            <div class="row">
+                <header class="ct-pageSectionHeader ct-u-marginTop70 ct-js-wayPoint col-md-4">
+                    <h2 class="ct-fw-600">
+                        <span class="text-lowercase">ticket</span>
+                        <small class="ct-u-colorMotive ct-fw-300">Early bird</small>
+                    </h2>
+                </header>
+                <div class="ct-u-marginTop100 col-md-8">
+                    <div class="form-group">
+                        {{form.ticket_type(class="form-control", id="exampleTshirt4")}}
+                        <label for="exampleTshirt4">Ticket type</label>
+                    </div>
+                    <p>
+                        <b>Normal ticket</b> - Normal ticket will give you access to all presentations and cup of awesome coffee.
+                    </p>
+                    <p>
+                        <b>VIP ticket</b> - The ticket price includes unlimited entry to all events of the Congress , poster, T-shirt , how much coffee you can drink a bottle of wine Autentic, reservation of a seat in the auditorium , free admission to the fashion show Fashion STL accompanied by one person.
+                    </p>
+                    <p>
+                        <b>Fashion.stl + Normal ticket</b> - Ticket is valid for all Congress events including the Fashion.stl show (3. 10. 18:00, La Fabrika). The price includes Paralelní Polis Bitcoin card with 1 free coffee.
+                    </p>
                 </div>
             </div>
         </section>
 
 
         <section>
-            <header class="ct-pageSectionHeader ct-pageSectionHeader--numbered ct-u-marginTop20 ct-js-wayPoint">
-                <h2 class="ct-fw-600">
-                    <span class="text-lowercase">ticket.</span>
-                    <!-- <small class="ct-u-colorMotive ct-fw-300">Early bird</small> -->
-                </h2>
-                        <span class="ct-pageSectionHeader-rightContent ct-u-colorMotive ct-fs-i ct-u-arapey">
-                            
-                        </span>
-            </header>
-            <p>
-                <div class="row">
-                    <div class="col-sm-6">
-
-                        <div class="form-group">
-                            {{form.ticket_type(class="form-control", id="exampleTshirt4")}}
-                            <label for="exampleTshirt4">Ticket type</label>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <b>Normal ticket</b> - Normal ticket will give you access to all presentations and cup of awesome coffee.
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <b>VIP ticket</b> - The ticket price includes unlimited entry to all events of the Congress , poster, T-shirt , how much coffee you can drink a bottle of wine Autentic, reservation of a seat in the auditorium , free admission to the fashion show Fashion STL accompanied by one person.
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <b>Fashion.stl + Normal ticket</b> - Ticket is valid for all Congress events including the Fashion.stl show (3. 10. 18:00, La Fabrika). The price includes Paralelní Polis Bitcoin card with 1 free coffee.
-
-                    </div>
-                </div>
-            </p>
-            <br>
-        </section>
-
-
-        <section>
-            <header class="ct-pageSectionHeader ct-pageSectionHeader--numbered ct-u-marginTop20 ct-u-marginBottom40 ct-js-wayPoint">
-                <h2 class="ct-fw-600">
-                    <span class="text-lowercase">payment.</span>
-                    <!-- <small class="ct-u-colorMotive ct-fw-300">Bitcoin is preffered</small> -->
-                </h2>
-                        <span class="ct-pageSectionHeader-rightContent ct-u-colorMotive ct-fs-i ct-u-arapey">
-                            
-                        </span>
-            </header>
             <div class="row">
-                <div class="col-sm-6">
+                <header class="ct-pageSectionHeader ct-u-marginTop70 col-sm-4">
+                    <h2 class="ct-fw-600">
+                        <span class="text-lowercase">payment</span>
+                        <small class="ct-u-colorMotive ct-fw-300">Bitcoin is preffered</small>
+                    </h2>
+                </header>
+
+                <div class="col-sm-8 ct-u-marginTop100">
 
                         <div class="form-group">
                             {{form.payment_method(class="form-control", id="exampleTshirt3")}}
@@ -95,14 +67,12 @@
                         </div>
 
                         <div class="form-group">
-                            <button type="submit" class="btn ct-btn--perspective btn-primary btn-lg"><i
+                            <button type="submit" class="btn btn-lg btn-primary ct-btn--rounded text-uppercase"><i
                                     class="fa fa-paper-plane"></i> Submit
                             </button>
                         </div>
 
                     </form>
-                </div>
-                <div class="col-sm-6">
                 </div>
             </div>
         </section>

@@ -53,7 +53,16 @@ class PublicSale(View):
 
                     Emails.order_waiting_paypal(self.ticket)
 
-                    return redirect(app.config["PAYPAL_BUTTON"])
+                    if form.ticket_type.data == "NORMAL":
+                        paypal_url = app.config["PAYPAL_BUTTON_NORMAL"]
+
+                    if form.ticket_type.data == "VIP":
+                        paypal_url = app.config["PAYPAL_BUTTON_VIP"]
+
+                    if form.ticket_type.data == "STL":
+                        paypal_url = app.config["PAYPAL_BUTTON_STL"]
+
+                    return redirect(paypal_url)
 
                 else:
 
@@ -78,6 +87,9 @@ class PublicSale(View):
 
         if form.ticket_type.data == "VIP":
             self.ticket.price = app.config["TICKET_PRICE_VIP"]
+
+        if form.ticket_type.data == "STL":
+            self.ticket.price = app.config["TICKET_PRICE_STL"]
 
         self.ticket.ticket_type = form.ticket_type.data
 

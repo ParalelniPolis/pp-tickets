@@ -39,7 +39,8 @@ TikcetForm.payment_method = wtf.SelectField(
 TikcetForm.ticket_type = wtf.SelectField(
     choices=[
         ("NORMAL", u"Normal - {} Kč".format(app.config["TICKET_PRICE_NORMAL"])),
-        ("VIP", u"VIP - {} Kč".format(app.config["TICKET_PRICE_VIP"]))
+        ("VIP", u"VIP - {} Kč".format(app.config["TICKET_PRICE_VIP"])),
+        ("STL", u"Fashion.stl + Normal ticket - {} Kč".format(app.config["TICKET_PRICE_STL"]))
     ]
 )
 
@@ -76,7 +77,8 @@ TikcetAdminForm.payment_method = wtf.SelectField(
 TikcetAdminForm.ticket_type = wtf.SelectField(
     choices=[
         ("NORMAL", u"Normal"),
-        ("VIP", u"VIP")
+        ("VIP", u"VIP"),
+        ("STL", u"Fashion.stl")
     ]
 )
 

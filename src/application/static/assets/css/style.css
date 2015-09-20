@@ -6532,7 +6532,7 @@ body.ct-navbar-isTransparent-toInverse .ct-pageWrapper {
   left: 0;
 }
 .form-group .form-control:valid ~ label {
-  background-color: #00c680;
+  background-color: #0002FF;
 }
 .form-group .form-control:valid ~ label:before {
   border-color: transparent #00603e transparent transparent;
